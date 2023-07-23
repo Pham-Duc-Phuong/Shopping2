@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICON TAB -->
+    <link rel="icon" href="./img/placeholder.png">
+
+    <!-- BOOTRAP 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Shopping | Mua và Bán Trên Ứng Dụng Di Động Hoặc Website</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="login d-flex justify-content-between">
+                <div class="login_left">
+                    <ul>
+                        <li><a href="#">Kênh người bán</a></li>|
+                        <li><a href="#">Trở thành người bán cho Shopping</a></li>|
+                        <li><a href="#">Tải người dùng</a></li>|
+                        Kết nối<li><a href="#"><i class="fa-brands fa-facebook"></i></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="login_right">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-bell"></i> Thông Báo</a></li>
+                        <li><a href="#"><i class="fa-solid fa-circle-question"></i> Hồ Sơ</a></li>
+                        <li><a href="#"><i class="fa-solid fa-globe"></i> Tiếng Việt <i
+                                    class="fa-solid fa-chevron-down"></i></a></li>
+                    </ul>
+                    <div id="login-right-btn" class="login-btn d-flex justify-content-between align-items-start">
+                        <button id="btn-register" class="button-register" type="button" data-bs-toggle="modal"
+                            data-bs-target="#myModal-register">Đăng Ký</button>|
+                        <button id="btn-login" class="button-login" type="button" data-bs-toggle="modal"
+                            data-bs-target="#myModal-login">Đăng Nhập</button>|
+                        <a href="./customer.html"><button><i class="fa-solid fa-user"></i> Manager</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="loginSearch d-flex justify-content-between
+            align-items-start">
+                <div class="header-logo">
+                    <button class="btn d-flex" type="reset"><img src="./img/placeholder.png"
+                            alt=""><span>Shopping</span></button>
+                </div>
+                <nav class="navbar">
+                    <div class="navbar-top">
+                        <form class="d-flex" role="search">
+                            <input class="form-control" type="search" placeholder="7/7 voucher giảm lên đến 50%"
+                                aria-label="Search">
+                            <button class="btn .cart-button" type="button"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                    <div class="navbar-bot">
+                        <ul>
+                            <li><a href="#">Điện thoại</a></li>
+                            <li><a href="#">Thời Trang</a></li>
+                            <li><a href="#">Thiết Bị Gia Dụng</a></li>
+                            <li><a href="#">Thiết Bị Điện Tử</a></li>
+                            <li><a href="#">Sách & Truyện Tranh</a></li>
+                            <li><a href="#">Balo</a></li>
+                            <li><a href="#">Đồ Dùng Học Tập</a></li>
+                            <li><a href="#">Mỹ Phẩm</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <a href="./admin.html"><button class="btn btn-shopping" type="button"><i
+                            class="fa-solid fa-cart-shopping"></i></button></a>
+            </div>
+        </div>
+    </header>
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel-top">
+                <div class="carousel-left owl-carousel">
+                    <div class="carousel-left-img item">
+                        <img class="img-fluid" src="./img/vn-50009109-fa79715264f5c973648d8096a8aa9773_xxhdpi.jpg"
+                            alt="">
+                    </div>
+                    <div class="carousel-left-img item">
+                        <img class="img-fluid" src="./img/vn-50009109-5406dd8eb5cb617c4095de7f93683024_xxhdpi.jpg"
+                            alt="">
+                    </div>
+                    <div class="carousel-left-img item">
+                        <img class="img-fluid" src="./img/vn-50009109-bf6574cb43c0565a22a99f3b3e0d6c10_xxhdpi.jpg"
+                            alt="">
+                    </div>
+                    <div class="carousel-left-img item">
+                        <img class="img-fluid" src="./img/vn-50009109-ccafc6261ecb0b94bc5032bfa449d0f2_xxhdpi.jpg"
+                            alt="">
+                    </div>
+                    <div class="carousel-left-img item">
+                        <img class="img-fluid" src="./img/vn-50009109-ee4e89b9bdc7f0c95a8633f4bdf18f9e_xxhdpi.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="carousel-right">
+                    <a href="#"><img class="img-fluid"
+                            src="./img/noi-that-giam-het-co-voi-loat-uu-dai-len-toi-50-ngay-tai-shopee-nem-giam-gia-1-1621418008-803-width600height180.jpg"
+                            alt=""></a>
+                    <a href="#"><img class="img-fluid"
+                            src="./img/vn-50009109-56dc12b436d03e81aa4037cd8a0f4026_xhdpi.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="carousel-bottom">
+                <div class="carousel-bottom-item">
+                    <a href="#">
+                        <img src="./img/freeship.png" alt="">
+                        <p>Miễn Phí Ship - Có Shopping</p>
+                    </a>
+                </div>
+                <div class="carousel-bottom-item">
+                    <a href="#">
+                        <img src="./img/voucher.png" alt="">
+                        <p>Voucher Giảm Đến 200.000Đ</p>
+                    </a>
+                </div>
+                <div class="carousel-bottom-item">
+                    <a href="#">
+                        <img src="./img/outlet.png" alt="">
+                        <p>Hàng Hiệu Outlet Giảm 50%</p>
+                    </a>
+                </div>
+                <div class="carousel-bottom-item">
+                    <a href="#">
+                        <img src="./img/magiamgia.png" alt="">
+                        <p>Mã Giảm Giá</p>
+                    </a>
+                </div>
+                <div class="carousel-bottom-item">
+                    <a href="#">
+                        <img src="./img/hot.png" alt="">
+                        <p>Bắt Trend - Giá Sốc</p>
+                    </a>
+                </div>
+                <div class="carousel-bottom-item">
+                    <a href="#">
+                        <img src="./img/service.png" alt="">
+                        <p>Nạp Thẻ, Dịch Vụ & Khách Sạn</p>
+                    </a>
+                </div>
+                <div class="carousel-bottom-item">
+                    <a href="#">
+                        <img src="./img/hangquocte.png" alt="">
+                        <p>Hàng Quốc Tế</p>
+                    </a>
+                </div>
+                <div class="carousel-bottom-item">
+                    <a href="#">
+                        <img src="./img/cheap.png" alt="">
+                        <p>Gì Cũng Rẻ - Mua Là Freeship</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="menu themes">
+        <div class="menu-background">
+            <div class="container">
+                <h4>Danh Mục</h4>
+                <hr>
+                <div class="menu-content">
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/suit-and-tie-outfit.png" alt="">
+                            <p>thời trang nam</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/tshirt-men.png" alt="">
+                            <p>thời trang bé trai</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/leather-work.png" alt="">
+                            <p>Giày Dép Nam</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/dress.png" alt="">
+                            <p>Thời Trang Nữ</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/t-shirt-women.png" alt="">
+                            <p>Thời Trang bé gái</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/high-heel.png" alt="">
+                            <p>Giày Dép Nữ</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/smartphone.png" alt="">
+                            <p>điện thoại & phụ kiện</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/camera.png" alt="">
+                            <p>Máy Ảnh & Máy Quay Phim</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/smart-tv.png" alt="">
+                            <p>thiết bị điện tử</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/laptop.png" alt="">
+                            <p>máy tính & laptop</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/smartwatch.png" alt="">
+                            <p>Đồng Hồ</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/electric-appliance.png" alt="">
+                            <p>Thiết Bị Điện Gia Dụng</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/sports.png" alt="">
+                            <p>Thể Thao & Du Lịch</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/car.png" alt="">
+                            <p>Ô Tô & Xe Máy & Xe Đạp</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/storage-box.png" alt="">
+                            <p>Đồ Chơi</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/pet-house.png" alt="">
+                            <p>Chăm Sóc Thú Cưng</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/tool-box.png" alt="">
+                            <p>Dụng cụ và thiết bị tiện ích</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/kitchen.png" alt="">
+                            <p>Nhà Cửa & Đời Sống</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/makeup-pouch.png" alt="">
+                            <p>Sắc Đẹp</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/medicine.png" alt="">
+                            <p>Sức Khỏe</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/handbag.png" alt="">
+                            <p>Túi Ví Nữ</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/jewelry.png" alt="">
+                            <p>Phụ Kiện & Trang Sức Nữ</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/book-stack.png" alt="">
+                            <p>Nhà Sách Online</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/app-development.png" alt="">
+                            <p>ứng dụng tiện ích</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/diet.png" alt="">
+                            <p>Đồ ăn</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/gift-voucher.png" alt="">
+                            <p>voucher</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <img src="./img/menu/shopping-cart.png" alt="">
+                            <p>bách hóa online</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product themes">
+        <div class="container">
+            <div class="product-content">
+                <div class="product-title">
+                    <h4><i class="fa-brands fa-apple"></i> Apple</h4>
+                </div>
+                <div class="product-content-item">
+                    <div class="product-item">
+                        <button class="btn btn-heart"><i class="fa-solid fa-heart"></i></button>
+                        <img class="img-fluid" src="./img/product/apple-watch-pcq.png" alt="">
+                        <h6>Apple Watch</h6>
+                        <h6>999$</h6>
+                        <div class="product-number">
+                            <button class="btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" value="0">
+                            <button class="btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button class="btn btn-cart"><i class="fa-solid fa-cart-plus"></i>
+                            <p>Thêm Vào Giỏ Hàng</p>
+                        </button>
+                    </div>
+                    <div class="product-item">
+                        <button class="btn btn-heart"><i class="fa-solid fa-heart"></i></button>
+                        <img class="img-fluid" src="./img/product/airpod.png" alt="">
+                        <h6>Airpod</h6>
+                        <h6>999$</h6>
+                        <div class="product-number">
+                            <button class="btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" value="0">
+                            <button class="btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button class="btn btn-cart"><i class="fa-solid fa-cart-plus"></i>
+                            <p>Thêm Vào Giỏ Hàng</p>
+                        </button>
+                    </div>
+                    <div class="product-item">
+                        <button class="btn btn-heart"><i class="fa-solid fa-heart"></i></button>
+                        <img class="img-fluid" src="./img/product/macbook_PNG8.png" alt="">
+                        <h6>Macbook</h6>
+                        <h6>999$</h6>
+                        <div class="product-number">
+                            <button class="btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" value="0">
+                            <button class="btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button class="btn btn-cart"><i class="fa-solid fa-cart-plus"></i>
+                            <p>Thêm Vào Giỏ Hàng</p>
+                        </button>
+                    </div>
+                    <div class="product-item">
+                        <button class="btn btn-heart"><i class="fa-solid fa-heart"></i></button>
+                        <img class="img-fluid" src="./img/product/iphone-11-pro-midnight-green-select-2019.png" alt="">
+                        <h6>Iphone</h6>
+                        <h6>999$</h6>
+                        <div class="product-number">
+                            <button class="btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" value="0">
+                            <button class="btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button class="btn btn-cart"><i class="fa-solid fa-cart-plus"></i>
+                            <p>Thêm Vào Giỏ Hàng</p>
+                        </button>
+                    </div>
+                    <div class="product-item">
+                        <button class="btn btn-heart"><i class="fa-solid fa-heart"></i></button>
+                        <img class="img-fluid" src="./img/product/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH.png"
+                            alt="">
+                        <h6>Ipad</h6>
+                        <h6>999$</h6>
+                        <div class="product-number">
+                            <button class="btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" value="0">
+                            <button class="btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button class="btn btn-cart"><i class="fa-solid fa-cart-plus"></i>
+                            <p>Thêm Vào Giỏ Hàng</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-title">
+                    <h4 class="h4-2">Samsung</h4>
+                </div>
+                <div class="product-content-item">
+                    <div class="product-item">
+                        <button class="btn btn-heart"><i class="fa-solid fa-heart"></i></button>
+                        <img class="img-fluid"
+                            src="./img/product/Samsung-glaxy-phone-isolated-on-transparent-background-PNG.png" alt="">
+                        <h6>Samsung Galaxy</h6>
+                        <h6>999$</h6>
+                        <div class="product-number">
+                            <button class="btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" value="0">
+                            <button class="btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button class="btn btn-cart"><i class="fa-solid fa-cart-plus"></i>
+                            <p>Thêm Vào Giỏ Hàng</p>
+                        </button>
+                    </div>
+                    <div class="product-item">
+                        <button class="btn btn-heart"><i class="fa-solid fa-heart"></i></button>
+                        <img class="img-fluid" src="./img/product/samsungwatch.png" alt="">
+                        <h6>Samsung Watch</h6>
+                        <h6>999$</h6>
+                        <div class="product-number">
+                            <button class="btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" value="0">
+                            <button class="btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button class="btn btn-cart"><i class="fa-solid fa-cart-plus"></i>
+                            <p>Thêm Vào Giỏ Hàng</p>
+                        </button>
+                    </div>
+                    <div class="product-item">
+                        <button class="btn btn-heart"><i class="fa-solid fa-heart"></i></button>
+                        <img class="img-fluid" src="./img/product/zfold.png" alt="">
+                        <h6>Galaxy Z-Fold</h6>
+                        <h6>999$</h6>
+                        <div class="product-number">
+                            <button class="btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" value="0">
+                            <button class="btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button class="btn btn-cart"><i class="fa-solid fa-cart-plus"></i>
+                            <p>Thêm Vào Giỏ Hàng</p>
+                        </button>
+                    </div>
+                    <div class="product-item">
+                        <button class="btn btn-heart"><i class="fa-solid fa-heart"></i></button>
+                        <img class="img-fluid" src="./img/product/zflip4.png" alt="">
+                        <h6>Galaxy Z-Flip</h6>
+                        <h6>999$</h6>
+                        <div class="product-number">
+                            <button class="btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" value="0">
+                            <button class="btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button class="btn btn-cart"><i class="fa-solid fa-cart-plus"></i>
+                            <p>Thêm Vào Giỏ Hàng</p>
+                        </button>
+                    </div>
+                    <div class="product-item">
+                        <button class="btn btn-heart"><i class="fa-solid fa-heart"></i></button>
+                        <img class="img-fluid" src="./img/product/tivi-samsung-ua50au7000-1_1616648290.png" alt="">
+                        <h6>Tivi Samsung</h6>
+                        <h6>999$</h6>
+                        <div class="product-number">
+                            <button class="btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" value="0">
+                            <button class="btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button class="btn btn-cart"><i class="fa-solid fa-cart-plus"></i>
+                            <p>Thêm Vào Giỏ Hàng</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="cart-icon"><button id="btn-showCart"><i class="fa-solid fa-cart-plus"></i></div></button>
+        <div class="container py-4">
+            <div class="row">
+                <div class="footer-post footer-left pl-lg-5 pl-md-3 pb-md-5 col-lg-4 col-md-12">
+                    <h3>FIND US</h3>
+                    <p>Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.</p>
+                    <p><a href="tel:+12 23456790">Phone: +12 23456790</a></p>
+                    <p><a href="mailto:info@example.com">Email: info@example.com</a></p>
+                    <p><a href="tel:+ 11 367 21890">Fax: + 11 367 21890</a></p>
+                </div>
+                <div class="footer-post footer-middle pb-md-5 col-lg-4 col-md-12">
+                    <div class="logo d-flex align-items-center">
+                        <img src="./img/placeholder.png" alt=""><span>Shopping</span>
+                    </div>
+                    <p class="mt-4 mb-0">Duis imperdiet sapien tortor, vitae congue diam auctor vitae. Aliquam eget
+                        turpis ornare,
+                        euismod ligul
+                        aeget, enenatis dui.</p>
+                    <p class="mt-5 mb-0">© 2023 Shopping. All Rights Reserved | WordPress Theme by<span><a
+                                class="W3Layouts" href="#"> BOOTCAMP 47</a></span></p>
+                </div>
+                <div class="footer-post pb-md-5 col-lg-4 col-md-12">
+                    <h3>NEWSLETTER</h3>
+                    <p>Subscribe to our mailing list and get updates to your email inbox.</p>
+                    <form class="d-flex" action="">
+                        <input type="text" placeholder="Email Address">
+                        <button class="btn" type="button"><span class="fa fa-paper-plane"
+                                aria-hidden="true"></span></button>
+                    </form>
+                    <div class="footer-social d-flex align-items-center pt-2 mt-4">
+                        <div class="social-bg max-width">
+                            <div class="social-right">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="backtotop">
+            <a class="BACKTOTOP" href="#"><i class="fa fa-arrow-up"></i></a>
+        </div>
+    </footer>
+    <section class="all-modal">
+        <div class="modal fade" id="myModal-register" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title modal-title-register">Đăng ký</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="inp">
+                                <i class="fa-solid fa-envelope"></i><input id="email-register" type="email"
+                                    placeholder="Email">
+                            </div>
+                            <div class="inp">
+                                <i class="fa-solid fa-phone"></i><input id="phone-register" type="number"
+                                    placeholder="Số điện thoại">
+                            </div>
+                            <div class="inp">
+                                <i class="fa-solid fa-user"></i><input id="account-register" type="text"
+                                    placeholder="Tên đăng nhập">
+                            </div>
+                            <div class="inp">
+                                <i class="fa-solid fa-key"></i><input id="pass-register" type="password"
+                                    placeholder="Mật khẩu">
+                            </div>
+                            <div class="inp">
+                                <i class="fa-solid fa-key"></i><input type="password" placeholder="Nhập lại mật khẩu">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="btn-register-modalreg" type="button" data-bs-dismiss="modal"
+                            class="btn btn-active btn-primary">Đăng ký</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Thoát</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal-login" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title modal-title-login">Đăng nhập</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="inp">
+                                <i class="fa-solid fa-user"></i><input id="input-login-modal" type="text"
+                                    placeholder="Tên đăng nhập">
+                            </div>
+                            <div class="inp">
+                                <i class="fa-solid fa-key"></i><input type="text" placeholder="Mật khẩu">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="btn-login-modal" type="button" class="btn btn-active btn-primary"
+                            data-bs-dismiss="modal">Đăng nhập</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Thoát</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <aside class="buying" style="width: 280px;height: 400px;">
+        <div class="buying-content">
+            <button id="btn-closeCart"><i style="color: white;" class="fa-solid fa-xmark"></i></button>
+            <h3 style="text-align: center; font-weight: 700;" class="mb-3">Shopping carts</h3>
+            <div class="buying-item">
+                <a href="#"></a>
+                <div class="buying-item-mid">
+                    <p style="height: 25px; line-height: 15px;width: 140px;margin: 0 0 0 5px;">Macbook</p>
+                    <div class="d-flex align-items-start">
+                        <button id="sth-minus" class="btn btn-minus" class="btn"><i class="fa-solid fa-minus"></i></button>
+                        <input id="sth-number" class="inpQuality" inputmode="numeric" type="number">
+                        <button id="sth-plus" class="btn btn-plus" class="btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="buying-item-right d-flex flex-column align-items-center">
+                    <button><i class="fa-solid fa-trash-can"></i></button>
+                    <div class="cost"><span>16</span><span>$</span></div>
+                </div>
+            </div>
+            <div class="buying-pay d-flex flex-column align-items-center">
+                <div class="buying-pay-title d-flex align-items-center justify-content-between my-2 px-3" style="width: 100%;">
+                    <h6>Tổng thanh toán :</h6>
+                    <div><Span></Span>$</div>
+                </div>
+                <button type="reset">Mua hàng</button>
+            </div>
+        </div>
+    </aside>
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- Owl carousel -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                autoplay: true,
+                nav: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+        });
+    </script>
+    <!-- BACK TO TOP -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop()) {
+                    $('.BACKTOTOP').fadeIn(200);
+                }
+                else {
+                    $('.BACKTOTOP').fadeOut(200);
+                }
+            });
+            $('.BACKTOTOP').click(function () {
+                $('html,body').animate(
+                    { scrollTop: 0 }, 0
+                );
+            });
+        });
+    </script>
+    <script src="./js/dangnhap.js"></script>
+    <!-- Cart -->
+    <script src="./js/Cart.js/product_Cart.js"></script>
+    <script src="./js/Cart.js/shoppingcart.js"></script>
+    <!-- Axios -->
+    <script src="./Model/product.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>

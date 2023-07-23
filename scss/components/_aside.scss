@@ -1,0 +1,140 @@
+.buying {
+    display: block;
+    background-color: rgb(255, 160, 51);
+    color: white;
+    position: fixed;
+    bottom: 300px;
+    right: -300px;
+    box-shadow: 0 0 30px 2px rgba(68, 68, 68, 0.4);
+    z-index: 1;
+    border-radius: 5px 0 0 5px;
+    transition: all 0.5s;
+
+    .buying-content {
+        margin: 10px;
+
+        button {
+            font-size: 18px;
+            background: transparent;
+            border: 0;
+        }
+
+        #btn-closeCart {
+            width: 30px;
+            height: 30px;
+            background: rgb(86, 86, 255);
+            border-radius: 6px;
+            text-align: center;
+            display: block;
+            transition: all .2s;
+            color: white;
+            opacity: 1;
+            margin-bottom: 10px;
+            &:hover{
+                background: rgb(255, 86, 156);
+                transition: all 0.3s;
+            }
+        }
+    }
+
+    .buying-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr 0.2fr;
+        align-items: center;
+        gap: 5px;
+        color: black;
+        background-color: rgb(255, 255, 255);
+        padding: 0 5px;
+        height: 90px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px 1px rgba(68, 68, 68, 0.4);
+    }
+
+    a {
+        width: 65px;
+        height: 50px;
+        background-image: url(https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/362284383_1001820724326126_7299244766246255259_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=xlxyejueuPYAX9-2NXP&_nc_ht=scontent.fsgn5-12.fna&oh=00_AfAVS79MOHU_in4_b0trhATiB6CjaQNaeE39xJzzsWoGxg&oe=64C017FE);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .buying-item-mid {
+        p {
+            font-size: 15px;
+            text-transform: capitalize;
+        }
+
+        input {
+            width: 25px;
+            border-radius: 5px;
+            border: solid rgb(173, 173, 173) 1px;
+            text-align: center;
+            outline: none;
+            box-shadow: 0 0 10px 1px rgba(218, 218, 218, 0.4);
+            &:hover {
+                border: solid rgb(255, 136, 0) 1px;
+                transition: all 0.2s;
+            }
+        }
+
+        button {
+            background-color: rgb(255, 255, 255);
+            width: 26px;
+            height: 26px;
+            line-height: 0;
+            padding: 0;
+            border: solid rgb(173, 173, 173) 1px;
+            border-radius: 5px;
+            @include styleText (rgb(0, 0, 0), 12px, 600);
+            margin: 0 5px;
+            box-shadow: 0 0 10px 1px rgba(218, 218, 218, 0.4);
+            &:hover {
+                color: rgb(255, 136, 0);
+                transition: all 0.2s;
+                border: solid rgb(255, 136, 0) 1px;
+            }
+        }
+    }
+
+    .buying-item-right {
+        span {
+            font-size: 14px;
+        }
+
+        button {
+            &:hover {
+                color: rgb(255, 136, 0);
+                transition: all 0.2s;
+            }
+        }
+    }
+    .buying-pay{
+        background-color: rgb(86, 86, 255);
+        color: rgb(255, 255, 255);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        border-radius: 0 0 0 5px;
+        button{            
+            width: 93%;
+            padding: 5px 10px;
+            margin-bottom: 10px; 
+            border-radius: 5px;
+            @include styleText ( white, 18px , 700);
+            transition: all 0.3s;
+            letter-spacing: 2px;
+            background: hsl(342, 88%, 67%);
+            &:hover {
+                background-color: rgb(255, 136, 0);
+                transition: all 0.3s;
+            }
+        }
+    }
+}
+
+.show-buying {
+    right: 0;
+    transition: all 0.5s;
+}

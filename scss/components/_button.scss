@@ -1,0 +1,41 @@
+.backtotop i{
+    width: 50px;
+    height: 50px;
+    background: #f55f8d;
+    border-radius: 8px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    transition: all .2s;
+    box-shadow: -4px 4px 24px -10px #f55f8d;
+    color: white;
+    opacity: 1;
+}
+.cart-icon{
+    position: fixed;
+    right: 0;
+    top: 30%;
+    button{
+        width: 65px;
+        height: 65px;
+        font-size: 30px;
+        border-radius: 5px 0 0 5px;
+        line-height: 65px;
+        text-align: center;
+        display: block;
+        background: hsl(342, 88%, 67%);
+        box-shadow: 0px 0px 20px 2px hsl(342, 88%, 67%, 0.5);
+        color: white;
+        border: 0;
+        opacity: 1;
+        transition: all 0.3s;
+        &:hover{            
+            background: rgb(255,160,51);            
+            box-shadow: 0px 0px 20px 2px rgb(255,160,51,0.5);
+            transition: all 0.3s;
+        }
+    }
+}

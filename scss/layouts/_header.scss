@@ -1,0 +1,105 @@
+header {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    @include styleText(rgb(255, 255, 255), 14px, 400);
+    ul {
+        display: flex;
+        padding-left: 0;
+    }
+
+    ;
+
+    li {
+
+        list-style: none;
+        padding: 0px 5px;
+    }
+
+    ;
+
+    a {
+        text-decoration: none;
+        @include styleText(rgb(255, 255, 255), 14px, 400)
+    }
+
+    ;
+    
+    .login {
+        padding-top: 8px;
+    }
+.login_right{
+    display: flex;
+    align-self: center;
+    button{
+        @include styleText(rgb(255, 255, 255), 14px, 400);
+        background-color: transparent;
+        border: 0;
+        padding: 0 5px;
+    }
+}
+    .loginSearch {
+
+        img {
+            width: 50px;
+        }
+
+        button {
+            font-size: 35px;
+            color: white;
+            font-family: 'Fasthand', cursive !important;
+            margin-left: 20px;
+        }
+
+        .header-logo {
+            button {
+                margin-right: 20px;
+                margin-left: 0;
+                border: 0;
+            }
+        }
+
+        .navbar {
+            padding: 0px, 0px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            form {
+                position: relative;
+                width: 100%;
+                display: flex;
+            }
+
+            input {
+                width: 100%;
+                height: 40px;
+            }
+
+            .navbar-top {
+                width: 100%;
+            }
+
+            button {
+                background-color: #e48f98;
+                color: white;
+                font-size: 14px;
+                font-weight: 900px;
+                border: 0px;
+                padding: 6px 20px;
+                position: absolute;
+                box-shadow: 0 0 10px 3px rgba(224, 224, 224, 0.5);
+                transform: translate(0);
+                right: 0.5%;
+                top: 8.75%;
+            }
+
+            li {
+                padding: 20px 10px 0 10px;
+                line-height: 0px;
+            }
+        }
+
+    }
+
+}

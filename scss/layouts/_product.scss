@@ -1,0 +1,110 @@
+.product {
+    padding: 30px 0;
+    .container {
+        background-color: white;
+        padding: 0px 0px 40px 0px;
+        box-shadow: 0 0 20px 5px rgba($color: #000000, $alpha: 0.1);
+    }
+    .product-title{
+        background-color: #000000;
+        h4 {
+            @include styleText (white, 35px , 600);
+            padding: 10px 0 20px 50px;
+            margin-bottom: 30px;
+        }
+        .h4-2{
+            margin-top: 30px;
+        }
+    }
+    .product-content-item {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .product-item {
+        box-shadow: 0 0 10px 1px rgba($color: #000000, $alpha: 0.1);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        img {
+            height: 48%;
+            padding: 20px;
+            object-fit: contain;
+        }
+
+        h6 {
+            @include styleText(black, 20px, 700);
+            &:nth-of-type(2) {
+                @include styleText(red, 30px, 700);
+                padding: 15px 0;
+            }
+        }
+        .btn-heart{
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            border:0;
+            @include styleText ( black , 20px, 400);  
+            background-color: transparent;   
+            &:hover{
+                color: red;
+                transition: all 0.5s;
+            }      
+        }
+    }
+
+    .product-number {
+        display: flex;
+        align-items: center;
+        padding-bottom: 15px;
+        .btn-minus{
+            padding: 2px 9px;
+            margin: 0 3px;
+            border: 0;
+            border-radius: 5px;
+            background-color: black;
+            @include styleText (white,20px,600)
+
+        }
+        .btn-plus{
+            padding: 2px 9px;
+            margin: 0 3px;
+            border: 0;
+            border-radius: 5px;
+            background-color: black;
+            @include styleText (white,20px,600)
+        }
+        input{
+            width: 35px;
+            height: 35px;
+            padding-left: 10px;
+            border-radius: 5px;
+            border: solid 1px rgb(194, 188, 188);
+        }
+        
+    }
+    .btn-cart{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        margin-top: 15px;
+        padding: 5px;
+        border: solid 1px;
+        transition: all 0.75s;
+        transition-timing-function: cubic-bezier(0.5, 3, 0.2, 1);
+        &:hover{
+            transform: translateY(-5px);
+            border-image: url(../images/br.png) 1 round;
+        }
+        i{
+            font-size: 30px;
+        }
+        p{
+            @include styleText (black,15px,700)
+        }
+    }
+}
