@@ -89,9 +89,8 @@
             border-radius: 8px;
             border: 0px;
             padding: 10px 10px;
-            color: white;
             transition: all 0.5s;
-            @include styleText (rgb(255, 255, 255), 15px, 700);
+            @include styleText (rgb(0, 0, 0), 15px, 700);
 
             &:hover {
                 background-color: hsl(21, 100%, 62%);   
@@ -107,8 +106,7 @@
             border: 0px;
             padding: 10px 10px;
             margin-right: 10px;
-            color: white;
-            @include styleText (rgb(255, 255, 255), 15px, 700);
+            @include styleText (rgb(0, 0, 0), 15px, 700);
             
             &:hover {
                 background-color: #fbd700;

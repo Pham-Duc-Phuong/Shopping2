@@ -22,9 +22,8 @@ footer {
         h3 {
             line-height: 25px;
             margin-bottom: 37px;
-            @include styleText(white, 20px, 600);
-            font-family: 'Fasthand', cursive !important;
-            letter-spacing: 10px;
+            @include styleText(white, 24px, 700);
+            letter-spacing: 5px;
         }
 
         p {

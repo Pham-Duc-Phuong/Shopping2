@@ -221,10 +221,9 @@ footer .footer-post h3 {
   line-height: 25px;
   margin-bottom: 37px;
   color: white;
-  font-size: 20px;
-  font-weight: 600;
-  font-family: "Fasthand", cursive !important;
-  letter-spacing: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 5px;
 }
 footer .footer-post p {
   line-height: 24px;
@@ -710,9 +709,8 @@ header .loginSearch .navbar li {
   border-radius: 8px;
   border: 0px;
   padding: 10px 10px;
-  color: white;
   transition: all 0.5s;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 15px;
   font-weight: 700;
 }
@@ -728,8 +726,7 @@ header .loginSearch .navbar li {
   border: 0px;
   padding: 10px 10px;
   margin-right: 10px;
-  color: white;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 15px;
   font-weight: 700;
 }

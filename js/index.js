@@ -27,24 +27,24 @@ function getProductList() {
                 <td>${prd.name}</td>
                 <td class='fw-bold'>${prd.price}$</td>
                 <td>
-                    <image src=${prd.image} style='width: 100px; height: 100px; object-fit: cover; object-position: center'/>
+                    <image src=${prd.image} style='max-width: 50px; object-fit: contain; object-position: center'/>
                 </td>
                 <td><div style='max-width: 300px'>${prd.description}</td>
                 <td>${prd.type}</td>
-                <td>
+                <td>    
                     <button 
                         class ='btn button-edit' 
                         data-bs-toggle="modal" 
                         data-bs-target="#myModal"
                         onclick="updateProduct(${prd.id})"
                      ><i class="fa-solid fa-pen"></i>
-                        Edit
+                        Chỉnh sửa
                     </button>
                     <button 
                         class ='btn button-delete' 
                         onclick="deleteProduct(${prd.id})"
                     ><i class="fa-solid fa-trash-can"></i>
-                        Delete
+                        Xóa
                     </button>
                 </td>
             </tr>
