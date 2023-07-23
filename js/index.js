@@ -1,6 +1,6 @@
 // Axios
 // var promise = axios({
-//     url: 'https://649b4e4ebf7c145d023a34fc.mockapi.io/Products',
+//     url: 'https://64b702a5df0839c97e165b2b.mockapi.io/product',
 //     method: 'GET',
 // })
 
@@ -10,7 +10,7 @@
 // Tạo hàm get product list
 function getProductList() {
     var promise = axios({
-        url: 'https://649b4e4ebf7c145d023a34fc.mockapi.io/Products',
+        url: 'https://64b702a5df0839c97e165b2b.mockapi.io/product',
         method: 'GET',
     })
 
@@ -25,10 +25,10 @@ function getProductList() {
             <tr>
                 <td>${i + 1}</td>
                 <td>${prd.name}</td>
-                <td class='fw-bold'>${prd.price}$</td>
                 <td>
                     <image src=${prd.image} style='max-width: 50px; object-fit: contain; object-position: center'/>
                 </td>
+                <td class='fw-bold'>${prd.price}$</td>
                 <td><div style='max-width: 300px'>${prd.description}</td>
                 <td>${prd.type}</td>
                 <td>    
@@ -90,7 +90,7 @@ getElement('#btnSave').onclick = function () {
 
     // Call API tạo product
     var promise = axios({
-        url: 'https://649b4e4ebf7c145d023a34fc.mockapi.io/Products',
+        url: 'https://64b702a5df0839c97e165b2b.mockapi.io/product',
         method: 'POST',
         data: product,
     })
@@ -117,7 +117,7 @@ getElement('#btnSave').onclick = function () {
 // Delete product
 function deleteProduct(idProduct) {
     var promise = axios({
-        url: `https://649b4e4ebf7c145d023a34fc.mockapi.io/Products/${idProduct}`,
+        url: `https://64b702a5df0839c97e165b2b.mockapi.io/product/${idProduct}`,
         method: 'DELETE',
     })
     promise
@@ -136,7 +136,7 @@ var idProductUpdate = ''
 // Update product
 function updateProduct(idProduct) {
     var promise = axios({
-        url: `https://649b4e4ebf7c145d023a34fc.mockapi.io/Products/${idProduct}`,
+        url: `https://64b702a5df0839c97e165b2b.mockapi.io/product/${idProduct}`,
         method: 'GET'
     })
 
@@ -162,7 +162,7 @@ getElement('#btnEdit').onclick = function () {
     // console.log("productEdit: ", productEdit);
 
     var promise = axios({
-        url: `https://649b4e4ebf7c145d023a34fc.mockapi.io/Products/${idProductUpdate}`,
+        url: `https://64b702a5df0839c97e165b2b.mockapi.io/product/${idProductUpdate}`,
         method: 'PUT',
         data: productEdit,
     })
